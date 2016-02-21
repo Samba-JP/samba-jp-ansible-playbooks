@@ -1,0 +1,5 @@
+- name: logcheck
+  hosts: all
+  roles:
+    - logcheck
+
