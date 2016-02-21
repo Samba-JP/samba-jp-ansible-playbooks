@@ -1,1 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: fatal: Read from socket failed: Connection (closed|reset) by peer \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.:[:xdigit:]]+: [0-9]+:.*\[preauth\]$
