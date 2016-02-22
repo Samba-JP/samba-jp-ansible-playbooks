@@ -5,6 +5,7 @@
 ## postgrey
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postgrey\[[0-9]+\]: whitelisted: [._[:alnum:]-]+\[[.:[:xdigit:]]+\]$
 ## OpenSSH
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Accepted publickey for [._[:alnum:]-]+ from [.:[:xdigit:]]+ port [0-9]+ ssh2: RSA [0-9a-f:]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: subsystem request for sftp by user [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Change of username or service not allowed: ([._[:alnum:]-]+,ssh-connection) -> \([._[:alnum:]-]+,ssh-connection\) \[preauth\]$
