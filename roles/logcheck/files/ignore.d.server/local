@@ -1,3 +1,6 @@
+## Postfix
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: hostname [._[:alnum:]-]+ does not resolve to address [.:[:xdigit:]]+$
+## OpenSSH
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: fatal: Read from socket failed: Connection (closed|reset) by peer \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.:[:xdigit:]]+: [0-9]+:.*\[preauth\]$
