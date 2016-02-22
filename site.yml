@@ -1,5 +1,8 @@
-- name: logcheck
+- name: Common roles for all hosts
   hosts: all
   roles:
-    - logcheck
+    - role: logcheck
+      tags: [logcheck]
+    - role: unbound
+      tags: [unbound]
 

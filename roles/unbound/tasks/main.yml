@@ -1,0 +1,36 @@
+- name: "Debian packages"
+  apt:
+    name: "{{item}}"
+    state: latest
+    update_cache: true
+  with_items: unbound
+  become: true
+
+- name: "/etc/unbound/unbound.conf"
+  copy:
+    src=unbound.conf
+    dest=/etc/unbound/unbound.conf
+    mode=0644
+    owner=root
+    group=root
+    backup=true
+  become: true
+  notify: unbound reload
+
+- name: "unbound service"
+  service:
+    name=unbound
+    state=started
+    enabled=true
+  become: true
+
+- name: "/etc/resolv.conf"
+  template:
+    src=resolv.conf
+    dest=/etc/resolv.conf
+    mode=0644
+    owner=root
+    group=root
+    backup=true
+  become: true
+

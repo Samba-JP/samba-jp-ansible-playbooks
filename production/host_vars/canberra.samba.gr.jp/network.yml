@@ -1,0 +1,4 @@
+dns_resolver_nameservers:
+  - 210.224.163.4
+  - 210.224.163.3
+
