@@ -1,5 +1,5 @@
 ## Postfix
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: hostname [._[:alnum:]-]+ does not resolve to address [.:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: hostname [._[:alnum:]-]+ does not resolve to address [.:[:xdigit:]]+(: Name or service not known)?$
 ## OpenSSH
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Change of username or service not allowed: ([._[:alnum:]-]+,ssh-connection) -> \([._[:alnum:]-]+,ssh-connection\) \[preauth\]$
