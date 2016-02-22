@@ -1,0 +1,48 @@
+- name: "Debian packages"
+  apt:
+    name: "{{item}}"
+    state: latest
+    update_cache: true
+  with_items: pdns-server
+  become: true
+
+- name: "/etc/powerdns/pdns.conf"
+  copy:
+    src=pdns.conf
+    dest=/etc/powerdns/pdns.conf
+    mode=0640
+    owner=root
+    group=pdns
+    backup=true
+  become: true
+  notify: pdns reload
+
+- name: "/etc/powerdns/bindbackend.conf"
+  copy:
+    src=bindbackend.conf
+    dest=/etc/powerdns/bindbackend.conf
+    mode=0640
+    owner=root
+    group=pdns
+    backup=true
+  become: true
+  notify: pdns reload
+
+- name: "/etc/powerdns/samba.gr.jp.zone"
+  copy:
+    src=samba.gr.jp.zone
+    dest=/etc/powerdns/samba.gr.jp.zone
+    mode=0640
+    owner=root
+    group=pdns
+    backup=true
+  become: true
+  notify: pdns reload-zones
+
+- name: "pdns service"
+  service:
+    name=pdns
+    state=started
+    enabled=true
+  become: true
+

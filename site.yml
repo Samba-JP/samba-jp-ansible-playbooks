@@ -6,3 +6,9 @@
     - role: unbound
       tags: [unbound]
 
+- name: DNS contents server for samba.gr.jp
+  hosts: dns-contents
+  roles:
+    - role: powerdns/authoritative
+      tags: [pdns, pdns-auth]
+
