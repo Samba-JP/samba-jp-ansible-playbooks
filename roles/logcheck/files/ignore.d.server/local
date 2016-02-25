@@ -8,7 +8,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Accepted publickey for [._[:alnum:]-]+ from [.:[:xdigit:]]+ port [0-9]+ ssh2: RSA [0-9a-f:]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: subsystem request for sftp by user [._[:alnum:]-]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: fatal: Read from socket failed: Connection (closed|reset) by peer \[preauth\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: maximum authentication attempts exceeded for invalid user [._[:alnum:]-]+ from [.:[:xdigit:]]+ port [0-9]+ ssh2 [preauth]
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: maximum authentication attempts exceeded for invalid user [._[:alnum:]-]+ from [.:[:xdigit:]]+ port [0-9]+ ssh2 \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Change of username or service not allowed: \([._[:alnum:]-]+,ssh-connection\) -> \([._[:alnum:]-]+,ssh-connection\) \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (error: )?Received disconnect from [.:[:xdigit:]]+: [0-9]+:.*\[preauth\]$
