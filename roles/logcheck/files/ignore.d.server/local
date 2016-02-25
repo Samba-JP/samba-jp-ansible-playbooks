@@ -12,5 +12,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Change of username or service not allowed: \([._[:alnum:]-]+,ssh-connection\) -> \([._[:alnum:]-]+,ssh-connection\) \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (error: )?Received disconnect from [.:[:xdigit:]]+: [0-9]+:.*\[preauth\]$
+## Unbound
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ unbound-anchor: /var/lib/unbound/root\.key has content$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ unbound-anchor: success: the anchor is ok$
 ## rsync
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: sent [0-9,]+ bytes  received [0-9,]+ bytes  total size [0-9,]+$
