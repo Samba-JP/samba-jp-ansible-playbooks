@@ -11,6 +11,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: maximum authentication attempts exceeded for invalid user [._[:alnum:]-]+ from [.:[:xdigit:]]+ port [0-9]+ ssh2 [preauth]
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Change of username or service not allowed: \([._[:alnum:]-]+,ssh-connection\) -> \([._[:alnum:]-]+,ssh-connection\) \[preauth\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.:[:xdigit:]]+: [0-9]+:.*\[preauth\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (error: )?Received disconnect from [.:[:xdigit:]]+: [0-9]+:.*\[preauth\]$
 ## rsync
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: sent [0-9,]+ bytes  received [0-9,]+ bytes  total size [0-9,]+$
