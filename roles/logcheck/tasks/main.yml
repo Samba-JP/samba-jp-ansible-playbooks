@@ -3,7 +3,9 @@
     name: "{{item}}"
     state: latest
     update_cache: true
-  with_items: logcheck
+  with_items:
+    - logcheck
+    - logcheck-database
   become: true
 
 - name: "/etc/logcheck/ignore.d.server/local"
