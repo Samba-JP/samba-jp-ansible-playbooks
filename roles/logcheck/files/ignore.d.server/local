@@ -12,10 +12,11 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: User [._[:alnum:]-]+ not allowed because account is locked$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Connection reset by [.:[:xdigit:]]+ \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnecting: Change of username or service not allowed: \([._[:alnum:]-]+,ssh-connection\) -> \([._[:alnum:]-]+,ssh-connection\) \[preauth\]$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.:[:xdigit:]]+: [0-9]+: ([-.[:alnum:]]+: )?((ok|disconnect|Auth fail)? )?\[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Disconnected from [.:[:xdigit:]]+( \[preauth\])?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.:[:xdigit:]]+: [0-9]+: ([-.[:alnum:]]+: )?((ok|disconnect|Auth fail)? )?\[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from [.:[:xdigit:]]+: 11: disconnected by server request$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Received disconnect from [.:[:xdigit:]]+: [0-9]+: disconnected by server request$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Received disconnect from [.:[:xdigit:]]+: 3: [-.[:alnum:]]+: Auth failed \[preauth\]$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Received disconnect from [.:[:xdigit:]]+: 2: disconnected by server request$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Could not write ident string to UNKNOWN$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: warning: can't get client address: Connection reset by peer$
 ## Unbound
