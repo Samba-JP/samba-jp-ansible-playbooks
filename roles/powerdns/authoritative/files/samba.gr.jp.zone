@@ -27,7 +27,7 @@ wiki.samba.gr.jp.	IN A		203.174.74.32
 canberra.samba.gr.jp.	IN A		112.78.198.109
 perth.samba.gr.jp.	IN A		180.235.230.64
 adelaide.samba.gr.jp.	IN A		203.174.74.32
-darwin.samba.gr.jp.	IN A		219.106.227.18
+;darwin.samba.gr.jp.	IN A		219.106.227.18
 
 mail.samba.gr.jp.	IN CNAME	canberra.samba.gr.jp.
 smtp.samba.gr.jp.	IN CNAME	canberra.samba.gr.jp.
