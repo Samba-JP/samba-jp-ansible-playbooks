@@ -1,6 +1,8 @@
 $TTL 1800
 
 samba.gr.jp.            IN SOA	a.ns.samba.gr.jp. hostmaster.samba.gr.jp. (
+			;; All DNS contents servers for samba.gr.jp act as a master,
+			;; thus you don't need to update the serial in the SOA RR.
 				2016022201	;; Serial
 				16384		;; Refresh
 				2048		;; Retry
