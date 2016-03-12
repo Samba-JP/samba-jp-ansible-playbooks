@@ -1,7 +1,8 @@
 ## Ansible
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ansible-[[:alnum:]]+: Invoked with 
 ## Postfix
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: warning: hostname [._[:alnum:]-]+ does not resolve to address [.:[:xdigit:]]+(: Name or service not known)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(submission/)?smtpd\[[0-9]+\]: warning: hostname [._[:alnum:]-]+ does not resolve to address [.:[:xdigit:]]+(: Name or service not known)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/(submission/)?smtpd\[[0-9]+\]: improper command pipelining after [A-Z]+ from 
 ## postgrey
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postgrey\[[0-9]+\]: whitelisted: [._[:alnum:]-]+\[[.:[:xdigit:]]+\]$
 ## OpenSSH
