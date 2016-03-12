@@ -1,8 +1,8 @@
 - name: "Debian packages"
   apt:
     name: "{{item}}"
-    state: latest
-    update_cache: true
+    state: present
+    update_cache: false
   with_items:
     - logcheck
     - logcheck-database
