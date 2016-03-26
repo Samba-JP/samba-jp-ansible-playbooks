@@ -16,8 +16,8 @@ samba.gr.jp.		IN NS		a.ns.samba.gr.jp.
 a.ns.samba.gr.jp.	IN A		112.78.198.109
 ns1.samba.gr.jp.	IN A		112.78.198.109
 samba.gr.jp.		IN NS		b.ns.samba.gr.jp.
-b.ns.samba.gr.jp.	IN A		180.235.230.64
-ns2.samba.gr.jp.	IN A		180.235.230.64
+b.ns.samba.gr.jp.	IN A		203.174.74.32
+ns2.samba.gr.jp.	IN A		203.174.74.32
 
 samba.gr.jp.		IN MX		10 a.mx.samba.gr.jp.
 a.mx.samba.gr.jp.	IN A		112.78.198.109
