@@ -1,0 +1,8 @@
+/.vagrant
+/site.retry
+/Makefile.local
+/Makefile.hosts
+/staging/ssh_config
+/staging/tmp
+/production/tmp
+vault.yml
