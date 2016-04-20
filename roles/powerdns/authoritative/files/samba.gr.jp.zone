@@ -10,7 +10,7 @@ samba.gr.jp.            IN SOA	a.ns.samba.gr.jp. hostmaster.samba.gr.jp. (
 				2560		;; Minimum
 				)
 
-samba.gr.jp.		IN TXT	"v=spf1 mx ip4:112.78.198.109 ip4:203.174.74.32 ip4:210.188.219.245 ~all"
+samba.gr.jp.		IN TXT	"v=spf1 mx ip4:112.78.198.109 ip4:203.174.74.32 ~all"
 
 samba.gr.jp.		IN NS		a.ns.samba.gr.jp.
 a.ns.samba.gr.jp.	IN A		112.78.198.109
