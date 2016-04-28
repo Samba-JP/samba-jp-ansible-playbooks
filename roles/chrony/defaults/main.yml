@@ -1,0 +1,6 @@
+ntp_pool_servers:
+  - jp.pool.ntp.org
+
+ntp_servers: []
+ntp_clients: []
+

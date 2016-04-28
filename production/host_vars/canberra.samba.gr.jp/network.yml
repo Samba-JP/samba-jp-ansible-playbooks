@@ -2,3 +2,6 @@ dns_resolver_nameservers:
   - 210.224.163.4
   - 210.224.163.3
 
+ntp_pool_servers: []
+ntp_servers:
+    - ntp1.sakura.ad.jp

@@ -5,6 +5,8 @@
       tags: [logcheck]
     - role: unbound
       tags: [unbound]
+    - role: chrony
+      tags: [chrony, ntp]
 
 - name: DNS contents server for samba.gr.jp
   hosts: dns-contents

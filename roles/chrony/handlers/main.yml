@@ -1,0 +1,13 @@
+## Do "restart" because "reload" is not supported
+- name: "chronyd reload"
+  service:
+    name: chrony
+    state: restarted
+  become: true
+
+- name: "adjtimex start"
+  service:
+    name: adjtimex
+    state: started
+  become: true
+

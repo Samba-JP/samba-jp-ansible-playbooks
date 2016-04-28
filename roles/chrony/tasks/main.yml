@@ -1,0 +1,52 @@
+- name: "Install Debian package"
+  apt:
+    name: "{{item}}"
+    state: present
+    update_cache: false
+  with_items:
+    - chrony
+    - adjtimex
+  become: true
+
+- name: "Check /etc/default/adjtimex"
+  stat:
+    path: /etc/default/adjtimex
+  register: adjtimex_stat
+
+- name: "Run adjtimexconfig(8) to create /etc/default/adjtimex (this may take 70 secs...)"
+  command: /usr/sbin/adjtimexconfig
+  become: true
+  register: adjtimexconfig_result
+  when: not adjtimex_stat.stat.exists
+  failed_when: "adjtimexconfig_result.rc != 0"
+  changed_when: true
+  notify: adjtimex start
+
+- name: "Check /etc/adjtime file"
+  stat:
+    path: /etc/adjtime
+  register: adjtime_stat
+
+- name: "Install chrony.conf(5)"
+  template:
+    src: chrony.conf
+    dest: /etc/chrony/
+    mode: 0644
+    owner: root
+    group: root
+  become: true
+  notify: chronyd reload
+
+- name: "Enable and start service"
+  service:
+    name: chrony
+    state: started
+    enabled: true
+  become: true
+
+- name: "Enable service"
+  service:
+    name: adjtimex
+    enabled: true
+  become: true
+
