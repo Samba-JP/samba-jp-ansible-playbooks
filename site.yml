@@ -12,5 +12,5 @@
   hosts: dns-contents
   roles:
     - role: powerdns/authoritative
-      tags: [pdns, pdns-auth]
+      tags: [pdns, pdns-auth, dns]
 
