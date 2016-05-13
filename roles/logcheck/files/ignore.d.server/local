@@ -1,5 +1,8 @@
 ## Ansible
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ansible-[[:alnum:]]+: Invoked with 
+## chronyd
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Selected source [.:[:xdigit:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: NTP packet received from unauthorised host 
 ## PowerDNS
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns(_server)?\[[0-9]+\]:( \w{3} [ :0-9]{11})? AXFR of domain 'samba\.gr\.jp' initiated by [.:[:xdigit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns(_server)?\[[0-9]+\]:( \w{3} [ :0-9]{11})? AXFR of domain 'samba\.gr\.jp' failed: (not authoritative|[.:[:xdigit:]]+ cannot request AXFR)$
