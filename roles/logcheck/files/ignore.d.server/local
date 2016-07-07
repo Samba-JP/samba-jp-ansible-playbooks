@@ -3,6 +3,9 @@
 ## chronyd
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Selected source [.:[:xdigit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: NTP packet received from unauthorised host 
+## Unbound
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ unbound-anchor: /var/lib/unbound/root\.key has content$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ unbound-anchor: success: the anchor is ok$
 ## PowerDNS
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns(_server)?\[[0-9]+\]:( \w{3} [ :0-9]{11})? AXFR of domain 'samba\.gr\.jp' initiated by [.:[:xdigit:]]+$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pdns(_server)?\[[0-9]+\]:( \w{3} [ :0-9]{11})? AXFR of domain 'samba\.gr\.jp' failed: (not authoritative|[.:[:xdigit:]]+ cannot request AXFR)$
@@ -26,8 +29,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: (fatal: Read from socket failed: )?Connection (closed|reset) by (peer|[.:[:xdigit:]]+)( port [0-9]+)? \[preauth\]$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Could not write ident string to UNKNOWN$
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: warning: can't get client address: Connection reset by peer$
-## Unbound
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ unbound-anchor: /var/lib/unbound/root\.key has content$
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ unbound-anchor: success: the anchor is ok$
 ## rsync
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyncd\[[0-9]+\]: sent [0-9,]+ bytes  received [0-9,]+ bytes  total size [0-9,]+$
+## Apache httpd
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ apache2\[[0-9]+\]: Reloading web server: apache2\.$
