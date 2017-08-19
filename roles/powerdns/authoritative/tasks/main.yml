@@ -15,18 +15,29 @@
     group=pdns
     backup=true
   become: true
-  notify: pdns reload
+  notify: pdns restart
 
-- name: "/etc/powerdns/bindbackend.conf"
+- name: "/etc/powerdns/pdns.d/bind.conf"
   copy:
-    src=bindbackend.conf
-    dest=/etc/powerdns/bindbackend.conf
+    src=bind.conf
+    dest=/etc/powerdns/pdns.d/bind.conf
     mode=0640
     owner=root
     group=pdns
     backup=true
   become: true
-  notify: pdns reload
+  notify: pdns restart
+
+- name: "/etc/powerdns/named.conf"
+  copy:
+    src=named.conf
+    dest=/etc/powerdns/named.conf
+    mode=0640
+    owner=root
+    group=pdns
+    backup=true
+  become: true
+  notify: pdns restart
 
 - name: "/etc/powerdns/samba.gr.jp.zone"
   copy:
@@ -45,4 +56,3 @@
     state=started
     enabled=true
   become: true
-

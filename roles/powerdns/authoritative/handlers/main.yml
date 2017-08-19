@@ -1,10 +1,9 @@
-- name: "pdns reload"
+- name: "pdns restart"
   service:
-    name=pdns
-    state=reloaded
+    name: pdns
+    state: restart
   become: true
 
 - name: "pdns reload-zones"
   command: pdns_control reload
   become: true
-
