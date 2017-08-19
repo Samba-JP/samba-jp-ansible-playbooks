@@ -20,7 +20,9 @@ b.ns.samba.gr.jp.	IN A		203.174.74.32
 ns2.samba.gr.jp.	IN A		203.174.74.32
 
 samba.gr.jp.		IN MX		10 a.mx.samba.gr.jp.
+samba.gr.jp.		IN MX		20 b.mx.samba.gr.jp.
 a.mx.samba.gr.jp.	IN A		112.78.198.109
+b.mx.samba.gr.jp.	IN A		203.174.74.32
 
 ftp.samba.gr.jp.	IN A		112.78.198.109
 www.samba.gr.jp.	IN A		112.78.198.109
